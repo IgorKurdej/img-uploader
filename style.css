@@ -49,6 +49,7 @@
 }
 
 .imageItem__wrapper {
+  max-width: 200px;
   margin: 40px 0;
   position: relative;
 }
