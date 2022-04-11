@@ -11,9 +11,12 @@ const covertToMb = size => {
 
 // function creates new p tag which represent one detail row
 const createNewDetailsRow = (item, value) => {
-  let detailRow = document.createElement("p");
-  detailRow.innerHTML = value;
-  item.appendChild(detailRow);
+  if (value !== "") {
+    console.log(value);
+    let detailRow = document.createElement("p");
+    detailRow.innerHTML = value;
+    item.appendChild(detailRow);
+  }
 };
 
 // function creates thumbnail
